@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gagan Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+    }
+
+    .container {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.08);
+      padding: 30px;
+      border-radius: 20px;
+      backdrop-filter: blur(15px);
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #cbd5f5;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      background: #38bdf8;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #0ea5e9;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    🚀 Gagan Gandhi - Developer Portfolio
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h1>Hello 👋</h1>
+      <p>I am a Web Developer & DevOps Learner</p>
+      <button onclick="showMessage()">Click Me</button>
+    </div>
+  </div>
+
+  <footer>
+    © 2026 Gagan Gandhi | All Rights Reserved
+  </footer>
+
+  <script>
+    function showMessage() {
+      alert("Keep Learning DevOps 🚀🔥");
+    }
+  </script>
+
+</body>
+</html>

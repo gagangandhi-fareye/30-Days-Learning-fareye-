@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-app-deployment
+  namespace: flask-app
+  labels:
+     app: flask-pod-label
+spec:
+  replicas: 7
+  selector:
+    matchLabels:
+      app: flask-pod-label
+  template:
+    metadata:
+      labels:
+        app: flask-pod-label
+    spec:
+      containers:
+      - name: flask-pod 
+        image: trainwithshubham/github-actions-app:latest
+        ports:
+        - containerPort: 80
+

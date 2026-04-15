@@ -1,0 +1,1 @@
+docker run -d -p 3306:3306 -v mysql-data:/var/lib/mysql --network=bank-app -e MYSQL_ROOT_PASSWORD=Test@123 -e MYSQL_DATABASE=bankappdb  mysql 

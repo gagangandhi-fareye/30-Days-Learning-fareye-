@@ -1,0 +1,15 @@
+kind: Pod 
+apiVersion: v1
+
+metadata:
+    name: nginx-pod 
+
+spec:   
+    containers:
+    - name: nginx 
+      image: nginx:latest
+      ports: 
+      - containerPort: 80 
+
+# Pod due to pod everthing is working fine 
+
